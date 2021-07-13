@@ -14,6 +14,9 @@ pub enum AuctionError {
   #[error("Amount expected mismatch")]
   ExpectedAmountMismatch,
 
+  #[error("Amount specified below highest bid")]
+  BelowExpectedAmount,
+
   #[error("Amount overflow")]
   AmountOverflow,
 }

@@ -13,6 +13,10 @@ pub enum AuctionInstruction {
 
   Bid {
     amount: u64
+  },
+
+  BidWinner {
+    amount: u64
   }
 }
 
